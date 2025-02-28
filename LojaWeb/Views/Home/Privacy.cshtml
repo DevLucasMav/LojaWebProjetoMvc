@@ -1,0 +1,12 @@
+﻿@{ ViewData["Title"] = "Política de Privacidade"; }
+
+<h1>@ViewData["Title"]</h1>
+<h2> Meu nome: @ViewBag.Nome</h2>
+
+<partial name="_mensagensPartial" />
+
+<form action="@Url.Action("Privacy", "Home")" method="post">
+    Id <input type="text" name="Id" />
+    Nome <input type="text" name="Nome" />
+    <input type="submit" name="name" value="Salvar" />
+</form>
